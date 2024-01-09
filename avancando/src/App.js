@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Dog from "./assets/dog.jpg"
+import ListRender from './components/ListRender';
+import ManageData from './components/ManageData';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Avançando em React</h1>
+
+        {/* Imagem em public */}
+        <div>
+          <img src="/cat.png" alt="Gato" />
+        </div>
+
+        {/* Imagem em asset */}
+        <div>
+          <img src={Dog} alt="Cachorro" />
+        </div>
+        <ManageData/>
+        <ListRender/>
     </div>
   );
 }
