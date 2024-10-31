@@ -1,6 +1,6 @@
 const Challenge = () => {
 
-    const a = 5;
+    const a = 6;
     const b = 2;
 
     const handleMyEvent = () => {
